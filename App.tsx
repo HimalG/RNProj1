@@ -25,6 +25,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import HomeScreen from './Screens/Home';
+import RegisterScreen from './Screens/Register';
+import LoginScreen from './Screens/Login';
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -76,20 +79,12 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this this this
-            screen and then come back to see your edits.
+          {/* <Section title="HomeScreen">
+          <HomeScreen navigation={undefined} />
+          </Section> */}
+          <Section title="Login">
+          <LoginScreen />
           </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -116,3 +111,5 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+
