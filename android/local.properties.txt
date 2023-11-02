@@ -1,0 +1,1 @@
+sdk.dir=C\:\\Users\\Himal\\AppData\\Local\\Android\\Sdk
